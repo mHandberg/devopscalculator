@@ -33,6 +33,13 @@ print(res)
     
     
 def subtraction(a,b):
+    
+     return a-b
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+res = subtraction(a,b)
+print(res)
     ...
     
 def multiplication(a,b):
