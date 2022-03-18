@@ -1,15 +1,8 @@
+
 import functions_framework
 @functions_framework.http
-def calculate_http(request):
-    """HTTP Cloud Function.
-    Args:
-        op - operation type [addition, subtraction, multiplication, division]
-        a  - the a value
-        b  - the b value
-    Returns:
-        The computed value
-    """
-     request_json = request.get_json(silent=True)
+def addition_http(request):
+    request_json = request.get_json(silent=True)
     request_args = request.args
 
     if request_json and 'name' in request_json:
